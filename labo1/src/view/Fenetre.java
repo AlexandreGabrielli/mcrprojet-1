@@ -1,6 +1,7 @@
-
+package view;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Fenetre extends JFrame {
 
@@ -13,11 +14,13 @@ public class Fenetre extends JFrame {
         //this.setResizable(true);
         //met la fenetre pas au bord de l'écran
         this.setLocation(500,500);
+        //fermeture de la fenetre
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //creation d'un panel
-        JPanel panel = new JPanel();
+        Panneau panel = new Panneau();
 
-        //attachement du panel 
+        //attachement du panel
         this.setContentPane(panel);
 
 

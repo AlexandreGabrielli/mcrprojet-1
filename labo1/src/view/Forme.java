@@ -1,4 +1,9 @@
 package view;
 
-public class Forme {
+import java.awt.Graphics;
+
+interface Forme {
+
+    public void dessine(Graphics g);
+
 }

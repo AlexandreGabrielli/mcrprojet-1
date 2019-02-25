@@ -4,14 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Panneau extends JPanel {
-    public void paintComponent(Graphics g){
-        //creer un rond
-        g.setColor(Color.ORANGE);
-        g.fillOval(20, 20, 75, 75);
-        g.fillOval(100, 30, 10, 10);
+    Dimension dimension;
 
-        g.setColor(Color.CYAN);
-        g.fillRect(100,100,10,10);
+    public void setSize() {
+        dimension = this.getSize();
+    }
+
+    public void paintComponent(Graphics g) {
+        //TODO : faire une liste de composant trier par taille
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.paint(g);
+        Cercle cercle = new Cercle();
+        cercle.paint(g);
     }
 
 

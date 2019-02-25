@@ -5,6 +5,7 @@ import java.awt.*;
 
 public class Fenetre extends JFrame {
 
+
     Fenetre() {
         //taille de la fenetre
         this.setSize(500,200);
@@ -36,6 +37,8 @@ public class Fenetre extends JFrame {
        Fenetre f = new Fenetre();
 
     }
+
+
 
 
 }
